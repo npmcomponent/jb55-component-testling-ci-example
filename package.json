@@ -1,23 +1,14 @@
 {
-  "name": "component-testling-ci-example",
-  "description": "component testling ci example",
-  "devDependencies": {
-    "mocha": "*",
-    "component": "*"
+  "name": "jb55-component-testling-ci-example",
+  "description": "testling ci + component example",
+  "version": "0.0.1",
+  "keywords": [
+    "example",
+    "testling"
+  ],
+  "main": "index.js",
+  "dependencies": {
+    "yields-traverse": "git://github.com/npmcomponent/yields-traverse.git"
   },
-  "testling": {
-    "harness": "mocha",
-    "browsers": [
-      "ie/6..latest",
-      "chrome/22..latest",
-      "firefox/16..latest",
-      "safari/latest",
-      "opera/11.0..latest",
-      "iphone/6",
-      "ipad/6",
-      "android-browser/latest"
-    ],
-    "preprocess": "make build",
-    "scripts": ["build/*.js", "test/*.js"]
-  }
+  "license": "MIT"
 }
